@@ -1,0 +1,8 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE VIEW [dbo].[vwReferenceDeleted]
+AS
+SELECT * FROM ReferenceDeleted
+GO
