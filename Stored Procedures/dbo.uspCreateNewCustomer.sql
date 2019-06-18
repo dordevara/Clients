@@ -5,7 +5,7 @@ GO
 -- =============================================
 -- Author: Roxana Butenco
 -- Create date: 14/06/2019
--- Description:	Create a new customer and a new Association with an existing customer
+-- Description:	Create a new Customer and Association (from the newly created customer to another customer) via a parameterised Stored Procedure.
 -- =============================================
 CREATE PROCEDURE [dbo].[uspCreateNewCustomer]
 	-- Add the parameters for the stored procedure 
