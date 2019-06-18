@@ -1,3 +1,9 @@
+
+/*************** Management Information Extract View **************************/
+/*For Management Information Reporting:
+We need to create a single view on all the clients and the touch points between them – an SQL View 
+which will return the association details between all clients (both sides of the relationship)! */
+
 SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_NULLS ON
