@@ -2,6 +2,10 @@ SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_NULLS ON
 GO
+
+/* delete a customer and foreign key records associated with this customer via a parameterised Stored Procedure. */
+/* create a stored procedure to delete client and FKs associated with it*/
+
 CREATE PROCEDURE [dbo].[uspDeleteClientAndFKs]
 @ClientId INT 
 AS 
