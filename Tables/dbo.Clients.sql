@@ -15,3 +15,5 @@ ALTER TABLE [dbo].[Clients] ADD CONSTRAINT [PK_Clients] PRIMARY KEY CLUSTERED  (
 GO
 ALTER TABLE [dbo].[Clients] ADD CONSTRAINT [fk_Clients_Reference] FOREIGN KEY ([ClientRefId]) REFERENCES [dbo].[Reference] ([RefId])
 GO
+EXEC sp_addextendedproperty N'MS_Description', N'All Clients', 'SCHEMA', N'dbo', 'TABLE', N'Clients', NULL, NULL
+GO

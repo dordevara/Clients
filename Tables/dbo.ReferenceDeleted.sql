@@ -11,3 +11,5 @@ ALTER TABLE [dbo].[ReferenceDeleted] ADD CONSTRAINT [PK_ReferenceDeleted] PRIMAR
 GO
 ALTER TABLE [dbo].[ReferenceDeleted] ADD CONSTRAINT [FK_ReferenceDeleted_Reference] FOREIGN KEY ([RefId]) REFERENCES [dbo].[Reference] ([RefId])
 GO
+EXEC sp_addextendedproperty N'MS_Description', N'All deleted records from Reference table', 'SCHEMA', N'dbo', 'TABLE', N'ReferenceDeleted', NULL, NULL
+GO

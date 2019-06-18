@@ -34,4 +34,7 @@ BEGIN
 	INSERT INTO Associations (Client1, AssocRefId, Client2) 
 		VALUES			(@ClientId, @AssocRefId, @Client2) 
 END
+
+GO
+EXEC sp_addextendedproperty N'MS_Description', N'create a new Customer and a new Association from the newly created customer to another existing customer ', 'SCHEMA', N'dbo', 'PROCEDURE', N'uspCreateNewCustomer', NULL, NULL
 GO

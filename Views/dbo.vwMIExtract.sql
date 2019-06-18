@@ -37,4 +37,10 @@ FROM	dbo.Associations A
 
 
 WITH CHECK OPTION
+
+GO
+EXEC sp_addextendedproperty N'MS_Description', N'Management
+Information Reporting: a view on all the clients and the touch points
+between them, which will return the association details between
+all clients (both sides of the relationship)', 'SCHEMA', N'dbo', 'VIEW', N'vwMIExtract', NULL, NULL
 GO

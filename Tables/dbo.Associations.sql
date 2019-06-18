@@ -18,3 +18,5 @@ ALTER TABLE [dbo].[Associations] ADD CONSTRAINT [FK_Associations_Clients2] FOREI
 GO
 ALTER TABLE [dbo].[Associations] ADD CONSTRAINT [fk_Associations_Reference] FOREIGN KEY ([AssocRefId]) REFERENCES [dbo].[Reference] ([RefId])
 GO
+EXEC sp_addextendedproperty N'MS_Description', N'Customers Associations', 'SCHEMA', N'dbo', 'TABLE', N'Associations', NULL, NULL
+GO

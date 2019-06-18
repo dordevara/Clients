@@ -12,3 +12,5 @@ ALTER TABLE [dbo].[Securities] ADD CONSTRAINT [FK_Securities_Accounts] FOREIGN K
 GO
 ALTER TABLE [dbo].[Securities] ADD CONSTRAINT [fk_Securities_Reference] FOREIGN KEY ([SecurityRefId]) REFERENCES [dbo].[Reference] ([RefId])
 GO
+EXEC sp_addextendedproperty N'MS_Description', N'Securities table', 'SCHEMA', N'dbo', 'TABLE', N'Securities', NULL, NULL
+GO

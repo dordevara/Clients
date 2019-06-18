@@ -55,3 +55,5 @@ DECLARE @DateDeleted date
 GO
 ALTER TABLE [dbo].[Reference] ADD CONSTRAINT [PK_Reference] PRIMARY KEY CLUSTERED  ([RefId]) ON [PRIMARY]
 GO
+EXEC sp_addextendedproperty N'MS_Description', N'A Reference table for all types like public, corporate, surveyor, cash,...', 'SCHEMA', N'dbo', 'TABLE', N'Reference', NULL, NULL
+GO

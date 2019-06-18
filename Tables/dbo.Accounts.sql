@@ -14,3 +14,5 @@ ALTER TABLE [dbo].[Accounts] ADD CONSTRAINT [FK_Accounts_Clients] FOREIGN KEY ([
 GO
 ALTER TABLE [dbo].[Accounts] ADD CONSTRAINT [fk_Accounts_Reference] FOREIGN KEY ([AccRefId]) REFERENCES [dbo].[Reference] ([RefId])
 GO
+EXEC sp_addextendedproperty N'MS_Description', N'Customers Accounts', 'SCHEMA', N'dbo', 'TABLE', N'Accounts', NULL, NULL
+GO
